@@ -1,0 +1,130 @@
+<html>
+<head>
+    <script language="JavaScript">
+
+    </script>
+</head>
+<body>
+    <table align="left" width="600px" border="0" cellpadding="5px">
+        <tr>
+            <td>
+                <form name="form1">
+                    <table border="0">
+                        <tr>
+                            <td width="300px"><strong>Last Name: </strong></td>
+                            <td width="300px"><input type="text" name="txtFirstName" value=" " size="20" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>First Name: </strong></td>
+                            <td><input type="text" name="txtLastName" value=" " size="20" /></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nationality: </strong></td>
+                            <td>
+                                <select id="Nationality" name="selNationality">
+                                    <option value="amer">USA</option>
+                                    <option value="can">Canada</option>
+                                    <option value="mex">Mexico</option>
+                                    <option value="ger">Germany</option>
+                                    <option value="fra">France</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>City you wish to visit: </strong></td>
+                            <td>
+                                <input type="radio" id="NM" name="radCity" value="New York City" />New York City<br />
+                                <input type="radio" id="BOST" name="radCity" value="Boston" />Boston<br />
+                                <input type="radio" id="SF" name="radCity" value="San Francisco" />San Francisco ($200 surcharge)<br />
+                                <input type="radio" id="LA" name="radCity" value="Los Angeles" />Los Angeles ($200 surcharge)<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Number of days ($150 per day): </strong></td>
+                            <td>
+                                <select id="NumberOfDays" name="selNumberDays">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Other options: </strong></td>
+                            <td>
+                                <input type="checkbox" id="FirstClass" name="chkFirst" />First Class Only ($500 surcharge)<br />
+                                <input type="checkbox" id="TravelWithSpouse" name="chkSpouse" />Traveling with Spouse (All costs doubled)<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right"><input type="button" value="Give me an estimate!" onclick="estimateCost()" /></td>
+                            <td align="left"><input type="reset" onclick="clearValues()"  /></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<script>
+    //var totalTripCost = 0;  
+    var tripCost = 150;
+    var surcharge = 200;
+    //var needPassport = true;
+    var firtClassSurCharge = 500;
+    var bringSpouse = 2;
+
+    function estimateCost()
+    {
+        var totalTripCost = 0;
+        var numOfDays = document.getElementById("NumberOfDays");
+        var tripDays = numOfDays.options[numOfDays.selectedIndex].value;
+        
+        totalTripCost = tripDays * tripCost;
+        
+        if (document.getElementById("SF").checked || document.getElementById("LA").checked)
+        {
+            totalTripCost = totalTripCost + surcharge;
+        }
+
+
+        if (document.getElementById("SF").checked || document.getElementById("LA").checked)
+        {
+            totalTripCost = totalTripCost + surcharge;
+        }
+
+        if (document.getElementById("FirstClass").checked == true)
+        {
+            totalTripCost = totalTripCost + firtClassSurCharge;
+        }
+        
+        if (document.getElementById("TravelWithSpouse").checked == true) {
+            totalTripCost = totalTripCost * bringSpouse;
+        }
+
+        alert("Total Trip Cost: $" + totalTripCost.toString());
+
+
+        var nationalityList = document.getElementById("Nationality");
+        var nationalityItem = nationalityList.options[nationalityList.selectedIndex].value;
+        if (nationalityItem == "amer" || nationalityItem == "can") {
+            alert("You do not require a passport for this trip.");
+        }
+        else {
+            alert("You do require a passport for this trip.");
+        }
+
+    }
+</script>

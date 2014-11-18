@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML 5 Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="JavaScript/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        #ulcontainer li {
+            padding-top: 40px;
+            padding-bottom: 5px;
+            padding-right: 40px;
+            padding-left: 40px;
+            list-style-type: none;
+            text-align: center;
+            display: inline;
+            color: white;
+            height: 15px;
+        }
+
+
+        .navbar-fixed-top {
+            background-color: black;
+            opacity:0.7;
+        }
+
+        /* a:hover {
+            border-bottom: 1px solid;
+            border-bottom-color: red;
+        }
+           */
+        /*a:link {
+            text-decoration: none;
+        }*/
+
+        .AddRedBoarder {
+            /*height: 20px;*/
+            border-bottom: 1px solid;
+            border-bottom-color: red;
+            color: white;
+        }
+
+        /*.RemoveRedBoarder {
+            border-bottom: none;
+            color: white;
+        }*/
+
+        .RightNavBase {
+            color: white;
+            padding: 4px;
+            opacity: 0.6 !important;
+            font-family: Arial;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .RightNavBaseHoover {
+            color: white;
+            padding: 4px;
+            opacity: 0.9 !important;
+            font-family: Arial;
+            font-weight: 500;
+            font-size: 16px;
+            border-bottom: 1px solid;
+            border-bottom-color: red;
+        }
+    </style>
+
+</head>
+<body style="margin:2px;padding:0;text-align:center;background-color:white;">
+    <div class="container"  style="border:none;">
+        <div style="border:none" class="navbar navbar-default navbar-fixed-top">
+            <nav role="navigation" >
+                <div style="height:15px;background-color:black;" />
+                <div style="opacity:0.7; width:auto;padding:15px;color:white;height:auto;">
+                    <ul id="ulcontainer" class="navbar">
+                        <li><a style="text-decoration: none; color:white;" href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+                        <li><a style="text-decoration: none; color:white;" href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a> </li>
+                        <li><a style="text-decoration: none; color:red;" href="HTML5Assignment.html">Chicago</a></li>
+                        <li><a style="text-decoration: none; color:white;" href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+                        <li><a style="text-decoration: none; color:white;" href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+                    </ul>
+                </div>
+                <!--<div style="width:100%;height:1px;background-color:black;" />-->
+                <!--<div id="h01" style="color:red;z-index:1000;">No JQuery</div>-->
+            </nav>
+        </div>
+    </div>
+    <div class="container container-fluid">
+        <img id="MarqueeImg" style="width:98%;height:600px;" src="Images/SearsTower.jpg" />
+        <!-- <img style="width:98%;height:600px;" src="Images/chicago-business.jpg" />-->
+        <div id="LeftContent" style="z-index:1;position:absolute;top:150px;left:200px;" class="col-md-*">
+            <h2 id="HeaderText1" style="color:beige;font-family:Arial;font-weight:200;opacity:1.9;">The Windy City</h2>
+            <div style="border:solid 2px;width:130px;color:red;"></div>
+            <h4 id="HeaderText2" style="color:beige;font-family:Arial;font-weight:100;opacity:1.9">Check out city events below</h4>
+        </div>
+        <div id="RightContent" style="z-index:1;position:absolute;top:150px;right:300px;">
+            <nav>
+                <ul id="RighNav" style="text-align:right;list-style-type:none;">
+                    <li id="Business" class="RightNavBase">Business</li>
+                    <li id="CAndR" class="RightNavBase">Culture & Recreation</li>
+                    <li id="Env" class="RightNavBase">Environment</li>
+                    <li id="HAndD" class="RightNavBase">Housing & Development</li>
+                    <li id="SS" class="RightNavBase">Social Services</li>
+                    <li id="CS" class="RightNavBase">Civic Services</li>
+                    <li id="Ed" class="RightNavBase">Education</li>
+                    <li id="Health" class="RightNavBase">Health</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:white;">
+        <article class="col-xs-4 col-md-4" style="color:black;border:solid 1px white;">
+            <header>
+                <h4>
+                    Chicago Night Life 
+                </h4>
+            </header>
+            <!--<figure>
+                <img src="Images/CHICAGO1.jpg" style="width:70%; height:70%"/>
+                <figcaption>artical date: 10/26/2014</figcaption>
+            </figure-->
+            <video id="homework" controls="controls" style="width:70%; height:70%">
+                <source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4" />
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
+            </video>
+            <p>Bacon ipsum dolor amet porchetta boudin strip steak, pancetta ground round ham hock tongue shankle frankfurter short ribs drumstick. Pig prosciutto landjaeger tenderloin shank, jowl boudin pork loin pancetta chuck kevin. Picanha shankle tail porchetta kielbasa leberkas. Shoulder alcatra rump shank flank, kielbasa porchetta sirloin. Bacon sausage meatball pastrami ham hock short loin pork belly shank. Fatback doner short ribs pork chop. Sirloin salami beef ribs, beef short loin tongue leberkas pork belly chuck ground round kevin short ribs pancetta filet mignon ball tip.</p>
+        </article>
+        <article class="col-xs-4 col-md-4" style="color:black;border:solid 1px white;">
+            <header>
+                <h4>
+                    Chicago Parks
+                </h4>
+            </header>
+            <figure>
+                <img src="Images/CHICAGO2.jpg" style="width:70%; height:70%" />
+                <figcaption>artical date: 10/26/2014</figcaption>
+            </figure>
+            <p>Marfa gluten-free cliche PBR&B synth. Fixie vinyl bespoke, Shoreditch letterpress sriracha paleo sustainable meh before they sold out lumbersexual XOXO roof party farm-to-table 8-bit. 8-bit cray master cleanse normcore mustache authentic, XOXO Pinterest try-hard Neutra gluten-free drinking vinegar. Williamsburg slow-carb disrupt Pinterest, iPhone vinyl Etsy you probably haven't heard of them deep v master cleanse cornhole scenester. Dreamcatcher American Apparel tofu four loko. Cray health goth master cleanse you probably haven't heard of them, Schlitz keffiyeh chillwave freegan. Viral Portland health goth, vinyl lo-fi Echo Park brunch pork belly pop-up meditation Carles.</p>
+        </article>
+        <article class="col-xs-4 col-md-4" style="color:black;border:solid 1px white;">
+            <header>
+                <h4>
+                    Civic Services
+                </h4>
+            </header>
+            <figure>
+                <img src="Images/CHICAGO3.jpg" style="width:70%; height:70%" />
+                <figcaption>artical date: 10/26/2014</figcaption>
+            </figure>
+            <p>Marfa gluten-free cliche PBR&B synth. Fixie vinyl bespoke, Shoreditch letterpress sriracha paleo sustainable meh before they sold out lumbersexual XOXO roof party farm-to-table 8-bit. 8-bit cray master cleanse normcore mustache authentic, XOXO Pinterest try-hard Neutra gluten-free drinking vinegar. Williamsburg slow-carb disrupt Pinterest, iPhone vinyl Etsy you probably haven't heard of them deep v master cleanse cornhole scenester. Dreamcatcher American Apparel tofu four loko. Cray health goth master cleanse you probably haven't heard of them, Schlitz keffiyeh chillwave freegan. Viral Portland health goth, vinyl lo-fi Echo Park brunch pork belly pop-up meditation Carles.</p>
+        </article>
+    </div>
+    <div class="container-fluid">
+        <article class="col-xs-4 col-md-4" style="color:black;border:solid 1px white;">
+            <header>
+                <h4>
+                    Social Services
+                </h4>
+            </header>
+            
+            <figure>
+                <img src="Images/Chicago4.png" style="width:70%; height:70%" />
+                <figcaption>artical date: 10/26/2014</figcaption>
+            </figure>
+            <p>Gastropub bitters beard occupy roof party Neutra, blog paleo. You probably haven't heard of them fingerstache Helvetica, blog chia umami banh mi PBR&B lo-fi mixtape cliche forage Schlitz disrupt taxidermy. Blog Portland craft beer, street art cred farm-to-table flannel retro Banksy actually put a bird on it Tonx shabby chic. Austin Shoreditch vinyl fingerstache. Messenger bag XOXO Godard Wes Anderson gastropub tattooed slow-carb, letterpress Schlitz leggings deep v. Direct trade fixie Truffaut, farm-to-table organic kale chips cold-pressed pork belly Helvetica Pinterest. Heirloom cliche typewriter raw denim drinking vinegar DIY, small batch VHS.</p>
+        </article>
+        <article class="col-xs-4 col-md-4" style="color:black;border:solid 1px white;">
+            <header>
+                <h4>
+                    Culture &Aacute; Recreation
+                </h4>
+            </header>
+            <figure>
+                <img src="Images/Chicago2.jpg" style="width:70%; height:70%" />
+                <figcaption>artical date: 10/26/2014</figcaption>
+            </figure>
+            <p>Gastropub bitters beard occupy roof party Neutra, blog paleo. You probably haven't heard of them fingerstache Helvetica, blog chia umami banh mi PBR&B lo-fi mixtape cliche forage Schlitz disrupt taxidermy. Blog Portland craft beer, street art cred farm-to-table flannel retro Banksy actually put a bird on it Tonx shabby chic. Austin Shoreditch vinyl fingerstache. Messenger bag XOXO Godard Wes Anderson gastropub tattooed slow-carb, letterpress Schlitz leggings deep v. Direct trade fixie Truffaut, farm-to-table organic kale chips cold-pressed pork belly Helvetica Pinterest. Heirloom cliche typewriter raw denim drinking vinegar DIY, small batch VHS.</p>
+        </article>
+        <article class="col-xs-4 col-md-4" style="color:black;border:solid 1px white;">
+            <header>
+                <h4>
+                    Education
+                </h4>
+            </header>
+            <figure>
+                <img src="Images/CHICAGO1.jpg" style="width:70%; height:70%" />
+                <figcaption>artical date: 1/2/2014</figcaption>
+            </figure>
+            <p>Bacon ipsum dolor amet porchetta boudin strip steak, pancetta ground round ham hock tongue shankle frankfurter short ribs drumstick. Pig prosciutto landjaeger tenderloin shank, jowl boudin pork loin pancetta chuck kevin. Picanha shankle tail porchetta kielbasa leberkas. Shoulder alcatra rump shank flank, kielbasa porchetta sirloin. Bacon sausage meatball pastrami ham hock short loin pork belly shank. Fatback doner short ribs pork chop. Sirloin salami beef ribs, beef short loin tongue leberkas pork belly chuck ground round kevin short ribs pancetta filet mignon ball tip.</p>
+        </article>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<script>
+    //function myFunction() {
+    //    $("#h01").html("Hello jQuery")
+    //}
+    jQuery(document).ready(function ($) {
+
+        $("#ulcontainer li").hover(
+            function () { $(this).addClass("AddRedBoarder") },
+            function () { $(this).removeClass("AddRedBoarder") })
+
+        $("#RighNav li").hover(
+             function () { $(this).addClass("RightNavBaseHoover") },
+             function () { $(this).removeClass("RightNavBaseHoover") })
+
+        $("#Business").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/chicago-business.jpg");
+                $("#HeaderText1").text("Business With The City");
+                $("#HeaderText2").text("Check out business events below");
+
+            }
+        });
+
+        $("#CAndR").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/Chicago-Skyline.jpg");
+                $("#HeaderText1").text("Culture & Recreation With The City");
+                $("#HeaderText2").text("Check out culture & recreation events below");
+            }
+        });
+
+        $("#Env").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/SearsTower.jpg");
+                $("#HeaderText1").text("Environment Issues With The City");
+                $("#HeaderText2").text("Check environment events below");
+            }
+        });
+
+        $("#HAndD").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/Chicago-Skyline.jpg");
+                $("#HeaderText1").text("Housing & Development With The City");
+                $("#HeaderText2").text("Check housing & development events below");
+
+            }
+        });
+
+        $("#SS").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/SearsTower.jpg");
+                $("#HeaderText1").text("Social Services With The City");
+                $("#HeaderText2").text("Check social services events below");
+            }
+        });
+
+        $("#CS").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/Chicago-Skyline.jpg");
+                $("#HeaderText1").text("Civic Services With The City");
+                $("#HeaderText2").text("Check civic services events below");
+            }
+        });
+
+        $("#Ed").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/SearsTower.jpg");
+                $("#HeaderText1").text("Education With The City");
+                $("#HeaderText2").text("Check education services events below");
+            }
+        });
+
+        $("#Health").on({
+            "click": function () {
+                $("#MarqueeImg").attr("src", "Images/chicago-business.jpg");
+                $("#HeaderText1").text("Health With The City");
+                $("#HeaderText2").text("Check health services events below");
+            }
+        });
+
+
+
+
+
+
+
+
+
+    });
+
+
+
+    //$("#testDiv").hover(function () { $(this).addClass("AddRedBoarderDiv"); }, function () { $(this).removeClass("AddRedBoarderDiv"); });
+
+
+
+</script>
+
+
+

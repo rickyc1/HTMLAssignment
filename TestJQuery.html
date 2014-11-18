@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="JavaScript/jquery-1.11.1.min.js"></script>
+    <style>
+        AddRedBoarder {
+            border-bottom: 1px solid;
+            border-bottom-color: red;
+            color: white;
+        }
+
+        .AddRedBoarderDiv {
+            height: 20px;
+            color: black;
+            padding-top: 50px;
+            border-bottom: 1px solid;
+            border-bottom-color: red;
+        }
+        .RemoveRedBoarderDiv {
+            height: 20px;
+            color: black;
+            padding-top: 50px;
+          
+        }
+
+        /*RemoveRedBoarderDiv {
+            height: 100px !important;
+            color: black !important;
+            padding-top: 50px !important;
+            text-decoration: none;
+        }*/
+
+        /*border:none div {
+            background-color: red;
+        }
+
+        div:hover {
+            background-color: blue !important;
+        }*/
+    </style>
+</head>
+<body>
+
+    <div id="testDiv" style="padding:20px;"> This is test text.</div>
+    <ul id="ulcontainer">
+        
+        <li id="AboutID" onmouseover="this.className = 'AddRedBoarderDiv'" onmouseout="this.className = 'RemoveRedBoarderDiv'"><a style="text-decoration: none;" href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
+        <li><a href="http://www.cityofchicago.org/city/en/svcs/find.html">Services</a> </li>
+        <li><a href="HTML5Assignment.html" style="color:red;">Chicago</a></li>
+        <li><a href="http://www.cityofchicago.org/city/en/chicagogovt.html">Government</a></li>
+        <li><a href="http://www.cityofchicago.org/city/en/progs.html">Programs</a></li>
+    </ul>
+</body>
+
+</html>
+<script>
+    //function myFunction() {
+    //    $("#head1").html("Hello jQuery")
+    //}
+    //$(document).ready(myFunction);
+
+    //function AddRedBorder(elem)
+    //{
+    //    elem.className = "AddRedBoarderDiv";
+    //}
+
+    $("#testDiv").hover(function () { $(this).css({ "border-bottom": "1px solid,border-bottom-color: red" }), function () { $(this).removeClass("border:none"); } });
+</script>

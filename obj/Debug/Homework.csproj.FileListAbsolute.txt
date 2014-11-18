@@ -1,0 +1,6 @@
+C:\Personal\Classes\DepaulHTML5\HTML5\Assignment\bin\Homework.dll.config
+C:\Personal\Classes\DepaulHTML5\HTML5\Assignment\bin\Homework.dll
+C:\Personal\Classes\DepaulHTML5\HTML5\Assignment\bin\Homework.pdb
+C:\Personal\Classes\DepaulHTML5\HTML5\Assignment\obj\Debug\Homework.csprojResolveAssemblyReference.cache
+C:\Personal\Classes\DepaulHTML5\HTML5\Assignment\obj\Debug\Homework.dll
+C:\Personal\Classes\DepaulHTML5\HTML5\Assignment\obj\Debug\Homework.pdb
